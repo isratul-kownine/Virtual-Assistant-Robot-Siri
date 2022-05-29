@@ -1,10 +1,9 @@
- import pyjokes
+
 import pyttsx3 as p
 import speech_recognition as sr
 from selenium_web import *
 from YT_auto import *
 from News import *
-import pyjokes
 import randfacts
 from weather import *
 import datetime
@@ -36,7 +35,7 @@ today_date= datetime.datetime.now()
 
 r = sr.Recognizer()
 
-speak("Hello, good " +wishme()+ ", i'm your voice assistant , siri.")
+speak("Hello, good " +wishme()+ ", i'm your voice assistant , nova.")
 print("Today is " + today_date.strftime("%d") + " of " + today_date.strftime("%B") + ", And It's currently " + (today_date.strftime("%I")) + "." + (today_date.strftime("%M")) + (today_date.strftime("%p")))
 speak("Today is " + today_date.strftime("%d") + " of " + today_date.strftime("%B") + ", And It's currently " + (today_date.strftime("%I")) + (today_date.strftime("%M")) + (today_date.strftime("%p")))
 print(" And Today the temperature in Chittagong is " + str(temp())+ " degree celcius " +  str(des()))
